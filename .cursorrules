@@ -1,0 +1,19 @@
+# AGENT DIRECTIVES
+
+## Tech Stack & Architecture
+- Framework: Next.js (App Router), React 19, TypeScript.
+- UI: Tailwind CSS, shadcn/ui, Lucide Icons.
+- Database & Auth: Supabase (Server Client + Client Component patterns using @supabase/ssr).
+
+## Coding Standards
+1. Write clean, modular, typed TypeScript. Avoid `any`.
+2. Keep components small and functional. Prefer Server Components by default.
+3. Use `shadcn/ui` components located in `@/components/ui`.
+4. Always handle error states, loading skeletons, and edge cases gracefully.
+5. NEVER hardcode secrets or API keys. Always read from `process.env`.
+6. Enforce strict Supabase Row Level Security (RLS) on all new database tables.
+
+## Execution Rules
+- Before writing major features, break down the plan in 3 bullet points.
+- Do not touch existing unrelated files unless explicitly asked.
+- After making changes, verify that imports are clean and types match.
