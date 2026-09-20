@@ -1,0 +1,7 @@
+# Next.js build output and cache
+.next/
+node_modules/
+
+# Local environment variables
+.env*.local
+.env
